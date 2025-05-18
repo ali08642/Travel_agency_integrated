@@ -1,0 +1,78 @@
+.hotel-search-page {
+    padding: 20px;
+    background-color: #f0f8ff;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-form input, .search-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .hotel-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    padding: 15px;
+  }
+  
+  .hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .details-btn, .select-room-btn, .close-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-btn:hover, .select-room-btn:hover, .close-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .modal-image {
+    width: 100%;
+    margin: 10px 0;
+  }
+  

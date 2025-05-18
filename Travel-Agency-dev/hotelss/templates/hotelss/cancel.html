@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Cancelled</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            background: white;
+            color: #ff416c;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #fff3f7;
+            transform: scale(1.05);
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">😞</div>
+    <h1>Payment Cancelled</h1>
+    <p>Looks like you didn’t complete the payment. But no worries, you can always try again.</p>
+    <a href="/checkout/" class="button">Try Again</a>
+</body>
+</html>
